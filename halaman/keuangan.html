@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../dist/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../fonts/andika/stylesheet.css">
+    <link rel="stylesheet" href="../fonts/ff-din/black/stylesheet.css">
+    <link rel="stylesheet" href="../bi/font/bootstrap-icons.css">
+</head>
+<body class="mx-2 md:mx-1 font-andika">
+    <div class='border-b-2 border-cyan-900 z-10 p-4 bg-cyan-700 fixed top-0 right-0 left-0'>
+        <button onclick="return setSidebar()" class="absolute left-6 top-6 hidden md:inline">
+            <div id="one" class="w-8 mb-[5px] border-2 rounded-sm border-black bg-black origin-left rotate-[35deg] transition delay-500"></div>
+            <div id="two" class="w-8 mb-[5px] border-2 rounded-sm border-red-700 bg-red-700 opacity-0 transition delay-500"></div>
+            <div id="three" class="w-8 mb-[5px] border-2 rounded-sm border-white bg-white origin-left -rotate-[35deg] transition delay-500"></div>
+        </button>
+        <p class='text-center text-3xl md:text-4xl font-bold text-white'>
+            <a class="font-din" href="#">MySID</a>
+        </p>
+    </div>
+
+    <div id="container" class="mx-auto md:ml-60 mt-[72px]">
+    <!-- render content -->
+
+    <div>
+        <div class="p-2 bg-cyan-200 inline-block m-4 rounded-md">
+            <p class="text-lg uppercase">keuangan</p>
+        </div>
+        <div class="m-2">
+            <p>Fitur ini digunakan untuk mengelola dokumen dan kesekretariatan desa. Dokumen yang dimaksud seperti: Produk hukum dan Informasi publik</p>
+        </div>
+    </div>    
+    
+    <!-- end render content -->
+    </div>
+
+    <!-- navbar start -->
+
+    <div id="sidebar" class="hidden md:block bg-red-50 border-red-700 border-r-2 fixed left-0 top-[72px] bottom-0 w-60 p-4 transition-all">
+        <a href="../index.html" onclick="return Dashboard()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="icon bi-speedometer mr-2 text-xl"></i>dashboard
+            </p>
+        </a>
+        <a href="info_desa.html" onclick="return InfoDesa()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-info-circle mr-2 text-xl"></i>info desa
+            </p>
+        </a>
+        <a href="kependudukan.html" onclick="return Kependudukan()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-people mr-2 text-xl"></i>kependudukan
+            </p>
+        </a>
+        <a href="statistik.html" onclick="return Statistik()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-graph-up-arrow mr-2 text-xl"></i>statistik
+            </p>
+        </a>
+        <a href="layanan_surat.html" onclick="return LayananSurat()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-envelope mr-2 text-xl"></i>layanan surat
+            </p>
+        </a>
+        <a href="sekretariat.html" onclick="return Sekretariat()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-building mr-2 text-xl"></i>sekretariat
+            </p>
+        </a>
+        <a href="keuangan.html" onclick="return Keuangan()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-coin mr-2 text-xl"></i>keuangan
+            </p>
+        </a>
+        <a href="analisis.html" onclick="return Analisis()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-pie-chart mr-2 text-xl"></i>analisis
+            </p>
+        </a>
+        <a href="bantuan.html" onclick="return Bantuan()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-gift mr-2 text-xl"></i>bantaun
+            </p>
+        </a>
+        <a href="pertanahan.html" onclick="return Pertanahan()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-map mr-2 text-xl"></i>pertanahan
+            </p>
+        </a>
+        <a href="pembangunan.html" onclick="return Pembangunan()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-buildings mr-2 text-xl"></i>pembangunan
+            </p>
+        </a>
+        <a href="lapak.html" onclick="return Lapak()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-cart mr-2 text-xl"></i>lapak
+            </p>
+        </a>
+        <a href="pemetaan.html" onclick="return Pemetaan()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-globe-americas mr-2 text-xl"></i>pemetaan
+            </p>
+        </a>
+        <a href="admin_web.html" onclick="return AdminWeb()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-laptop mr-2 text-xl"></i>admin web
+            </p>
+        </a>
+        <a href="layanan_mandiri.html" onclick="return LayananMandiri()" class='flex hover:bg-cyan-50 rounded-md mb-1 h-8 p-2'>
+            <p class='text-lg inline self-center ml-2'>
+                <i class="bi-person mr-2 text-xl"></i>layanan mandiri
+            </p>
+        </a>
+    </div>
+
+    <!-- end navbar -->
+
+    <!-- start nav mobile -->
+
+    <div id='navMobile' class='bg-white fixed bottom-0 right-0 left-0 border-t-2 border-t-cyan-700 -mb-56 md:hidden'>
+        <button onclick="return setNavMobile()" class='absolute right-0 -top-[28px] bg-cyan-700 pt-1 px-3 rounded-tl-lg'>
+            <span id='first' class='border-2 rounded-sm border-white bg-white font-extrabold inline-block rotate-45 transition delay-500 h-4'></span>
+            <span id='second' class='border-2 rounded-sm border-black bg-black font-extrabold inline-block -rotate-45 transition delay-500 h-4'></span>
+        </button>
+        <div class='grid grid-cols-4 gap-2 p-2 transition-all text-center'>
+            <a href="../index.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-speedometer"></i>
+                <p class='text-xs'>home</p>
+            </a>
+            <a onclick="" href="info_desa.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-info"></i>
+                <p class='text-xs'>info desa</p>
+            </a>
+            <a onclick="" href="kependudukan.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-people"></i>
+                <p class='text-xs'>penduduk</p>
+            </a>
+            <a onclick="" href="statistik.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-graph-up-arrow"></i>
+                <p class='text-xs'>statistik</p>
+            </a>
+            <a onclick="" href="layanan_surat.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-envelope"></i>
+                <p class='text-xs'>surat</p>
+            </a>
+            <a onclick="" href="sekretariat.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-building"></i>
+                <p class='text-xs'>sekretariat</p>
+            </a>
+            <a onclick="" href="keuangan.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-coin"></i>
+                <p class='text-xs'>keuangan</p>
+            </a>
+            <a onclick="" href="analisis.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-pie-chart"></i>
+                <p class='text-xs'>analisis</p>
+            </a>
+            <a onclick="" href="bantuan.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-gift"></i>
+                <p class='text-xs'>bantuan</p>
+            </a>
+            <a onclick="" href="pertanahan.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-map"></i>
+                <p class='text-xs'>pertanahan</p>
+            </a>
+            <a onclick="" href="pembangunan.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-buildings"></i>
+                <p class='text-xs'>pembangunan</p>
+            </a>
+            <a onclick="" href="lapak.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-cart"></i>
+                <p class='text-xs'>lapak</p>
+            </a>
+            <a onclick="" href="pemetaan.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-globe-americas"></i>
+                <p class='text-xs'>pemetaan</p>
+            </a>
+            <a onclick="" href="admin_web.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-laptop"></i>
+                <p class='text-xs'>admin</p>
+            </a>
+            <a onclick="" href="layanan_mandiri.html" class='bg-cyan-50 rounded-md p-1'>
+                <i class="bi-person"></i>
+                <p class='text-xs'>layanan</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- end nav mobile -->
+
+    <!-- bar end -->
+
+    <script src="../js/nav.js"></script>
+</body>
+</html>

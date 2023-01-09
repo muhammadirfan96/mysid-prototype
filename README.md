@@ -1,0 +1,1 @@
+MySID merupakan Aplikasi berbasis web untuk Mendukung Fungsi dan tugas Administrasi Pemerintahan Desa seperti Administrasi Umum, Administrasi Kependudukan, Administrasi Keuangan, Administrasi Pembangunan, Layanan Publik, Layanan Informasi Publik dan lainnya.
